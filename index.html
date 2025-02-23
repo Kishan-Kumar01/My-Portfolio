@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishan_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a6bece05f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div style="display: flex;">
+                <img src="images/Kishanlogo.webp" style="width: 25px; height: 25px;" class="logo">
+                <h2 style="font-family:Cambria;">Kishan Portfolio</h2>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header_text">
+            <p>Artificial Intelligence & Machine Learning</p>
+            <h1>Hi, I'm <span>Kishan Thakur</span><br> From Bihar</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------------about----------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Aboutmekishan.png" alt="pt">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am an undergraduate student majoring in Artificial Intelligence and Machine Learning, with a 
+                    strong foundation in programming, algorithms, and statistical modeling. I'm passionate about 
+                    applying AI/ML to real-world challenges, particularly in areas like Natural Language Processing and deep learning.
+                    
+                    I've gained hands-on experience with frameworks like TensorFlow, Keras, and Scikit-Learn through
+                     various projects and hackathons.
+
+Currently, I am seeking opportunities to further develop my skills, contribute to impactful projects, and learn from 
+professionals in the field. I am eager to explore internships or research roles that align with my interests
+ and aspirations.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Machine Learning  Frameworks & Libraries </span><br>TensorFlow / Keras<br>
+                            PyTorch.<br>
+                            Scikit-learn.<br>
+                            Pandas.<br>
+                            Matplotlib/Seaborn.<br>
+                            NLTK/Spacy.</li>
+                        <li><span>Quantum Computing Languages and Frameworks</span><br>Qiskit <br>
+                            Cirq.<br>
+                            Quipper.<br>
+                            Forest/pyQuil: Rigetti’s quantum computing framework.<br>
+                            Microsoft Quantum Development Kit (QDK). </li>
+                    </ul>
+                </div><div class="tab-contents " id="projects">
+                    <ul>
+                        <li><span>Breast Cancer Classification Using Machine Learning</span><br>Supervised Learning<br>
+                            Feature Engineering<br>
+                            Model Selection<br>
+                            Hyperparameter Tuning <br>
+                            Evaluation Metrics </li>
+                        <li><span> Heart Disease Prediction</span><br>Medical Data Understanding<br>
+                            Data Science & Preprocessing<br>
+                            Explainability & Ethical Considerations</li>
+                    </ul>
+                </div><div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BCA (Bachelor of Computer Applications) Specialization in AI & ML</span><br>Galgotias University</li>
+                        <li><span>Intermediate</span><br>Delhi Public School, Patna</li>
+                        <li><span>Metriculation</span><br>Delhi Public School, Patna</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------services----------------------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Machine Learning</h2>
+                <p>Machine learning is a branch of artificial intelligence 
+                    that enables computers to learn from data and improve their performance 
+                    without explicit programming. It involves algorithms and statistical models to identify 
+                    patterns, make predictions, 
+                    and solve problems in various fields like healthcare, finance, and robotics. </p>
+                <a href="#">Learn More</a>
+            </div><div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Neural Networks</h2>
+                <p>A neural network is a computational model inspired by the human brain, consisting of layers of 
+                    interconnected nodes (neurons). It processes data through these layers to recognize patterns, 
+                    classify information, and make predictions. Neural networks are foundational in deep learning,
+                     powering applications like image recognition and natural language processing.</p>
+                <a href="#">Learn More</a>
+            </div><div>
+                <i class="fa-solid fa-atom"></i>
+                <h2>Quantum Computing</h2>
+                <p>Quantum computing leverages the principles of quantum mechanics to
+                     process information in fundamentally different ways than classical computers. 
+                     Using qubits, which can exist in multiple states simultaneously, quantum computers have
+                      the potential to solve complex problems faster, 
+                    
+                    impacting fields like cryptography, optimization, and drug discovery.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- -----------------------------portfolio------------------------ -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Breast cancer.webp">
+                <div class="layer">
+                    <h3>Breast Cancer</h3>
+                    <p> Breast cancer is a malignant tumor originating in breast cells.
+                         AI/ML techniques assist in early detection, diagnosis, treatment prediction,
+                         and personalized care by analyzing medical data and images for better outcomes.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div><div class="work">
+                <img src="images/Heart Disease.webp">
+                <div class="layer">
+                    <h3>Heart Disease Prediction</h3>
+                    <p>AI/ML models analyze patient data, such as lifestyle, genetics, and medical history,
+                         to predict heart disease risks, enabling early 
+                        intervention, personalized treatment plans, and improved patient outcomes through accurate predictions.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div><div class="work">
+                <img src="images/Gamma Ray.webp">
+                <div class="layer">
+                    <h3>Impact Of Gamma Ray Burst Using Quantum Computing & AI </h3>
+                    <p> Quantum computing can analyze **Gamma Ray Bursts (GRBs)** by processing
+                         vast cosmic data with quantum algorithms. It enhances astrophysical simulations, 
+                         enabling deeper insights into these high-energy explosions
+                         and their origins in the universe.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+  </div>
+  <!-- --------------------contact----------------------------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kishankumar10397@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 8757569181</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kishan-kumaraiml/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/whokishankumar?t=e_zxwc039wKOkjp_6E1mGA&s=09"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=fjx1tnx"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013547079744"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="./images/Kishan Resume .pdf" download="resume" class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kishan Portfolio Made with <i class="fa-solid fa-heart"></i> by Kishan Thakur 2025</p>
+    </div>
+   </div>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        } for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzvr6lKdyYaa4rd7HKlVYd6h-3huHnpZeBmic2UeC08t1khlVnTo2IzhJ6eR8lbAOaq/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
